@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" href="product.css">
+  
+  <link rel="stylesheet" href="bootstrap-css/bootstrap.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <title>Account page</title>
+</head>
+
+<body>
+  
+  <header class="header">
+   <nav class="navbar navbar-expand-md navbar-light py-3">
+       <div class="container-fluid">
+    <a class="navbar-brand" href="/index.html" name="top" id="navbar-brand">Allout Store</a>
+    
+    <input type="text" placeholder="search" id="input-el">
+    
+    <!-------toggle-icon---->
+    <button 
+    class="navbar-toggler"
+    type="button" data-bs-toggle="collapse"
+    data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav  ms-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/product.html">Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/deals.html">Deals</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="/help-&-contact.html">Help & Contact</a>
+        </li>
+        
+          <li class="nav-item">
+          <a class="nav-link" href="/account.html">Account</a>
+        </li>
+        
+             <li class="nav-item">
+          <a class="nav-link" href="/cart.html"><i class="bi bi-cart4 text-dark h5"></i></a>
+        </li>
+
+          <li class="nav-item">
+          <a class="nav-link" href="/notification.html"><i class="bi bi-bell text-dark h5"></i></a>
+        </li>
+     
+      </ul>
+    </div>
+    </div>
+</nav>
+  </header>
+  
+  <!----account page---->
+  <div class="container-fluid account-page">
+    <div class="container container9">
+      <div class="row">
+        
+        <div class="col-md">
+          <div class="form-container">
+             <div class="inner-box" id="card">
+              <div class="card-front">
+                <span>LOGIN</span>
+                   <form id="login-form">
+              <input type="text" placeholder="Username" id="required">
+              <input type="password" placeholder="Password" id="required" class="input-box"> 
+              <button type="submit" class="btn">Login</button>
+              <a href="">Forgot Password</a>
+            </form>
+            <button type="button" class="btn1" onclick="openRegister()">I'm New Here</button>
+              </div>
+              
+              <div class="card-back">
+                <span>REGISTER</span>
+                   <form id="reg-form">
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <input type="password" placeholder="Password"> 
+              <button type="submit" class="btn">Register</button>
+                 <button type="button" class="btn1"
+                 onclick="openLogin()">I've an account</button>
+            </form>
+              </div>
+              
+              </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+    <!--------- footer ---------->
+  
+  <div class="container-fluid footer">
+    
+    <div class="container-fluid text-center footer1">
+    <i class="bi bi-arrow-up-circle-fill text-light h5"></i>
+    <a href="#top">TOP OF PAGE</a>
+    </div>
+    
+    <div class="row row-footer">
+      
+      <div class="col col-footer text-center">
+     <h1>Download Our App</h1>
+     <p>Download App for Android and ios Mobile Phone </p>
+       <p>Our purpose is to a provide place where all items can be shopped without stresss </p>
+ 
+     <img src="./images/app-store-google-play-apple-apple-8e10909017cd0621f4ff03c2c3d85f91.png" alt="" class="img-fluid">
+    </div>
+    
+     <div class="col row2-footer">
+       <h2>Useful Links:</h2>
+       <ul>
+         <li><a href="/index.html">Allout Store</a></li>
+            <li><a href="#">Your List</a></li>
+             <li><a href="#">Find a Gift </a></li>
+             <li><a href="#">Browsing History</a></li>
+             <li><a href="#">Returns</a></li>
+              <li><a href="/help-&-contact.html">Customer Service</a></li>
+       </ul>
+     </div>
+     
+     <div class="col row2-footer">
+       <h2>Follow us:</h2>
+       <ul>
+       <li><a href="#">Facebook</a></li>
+       <li><a href="#">Twitter</a></li>
+       <li><a href="#">Instagram</a></li>
+       </ul>
+     </div>
+   </div>
+   
+  <div class="footer2">
+    
+   <div class="row">
+     
+     <div class="col">
+       <p><i class="bi bi-globe lead"></i> English</p>
+     </div>
+    
+      <div class="col">
+       <p><i class="bi bi-cash lead"></i> NGN - Naira</p>
+     </div>
+     
+       <div class="col">
+      <p><i class="bi bi-globe2"></i> NIGERIA</p>
+     </div>
+   </div>
+   
+   <a href="/account.html"><h2 class="text-center">Already a customer? Sign In </h2></a>
+   
+    <div class="row">
+      
+        <div class="col">
+       <p>Condition of Use</p>
+     </div>
+     
+       <div class="col">
+       <p>Privacy Policies</p>
+     </div>
+     
+       <div class="col">
+       <p>Internet Based Ads</p>
+     </div>
+     
+     <h2 class="text-center">&copy; 2022, Allout.com,Inc. or its affiliates</h2>
+    </div>
+  </div>
+  
+  </div>
+  
+     <script>
+     
+    let card = document.getElementById("card")
+    
+    function openRegister(){
+      let Card1 = card.style.transform = "rotateY(-180deg)"
+      console.log(Card1)
+    }
+    
+    function openLogin(){
+      let Card2 = card.style.transform = "rotateY(-0deg)"
+      console.log(Card2)
+    }
+    
+    
+    
+   </script>
+  
+   <script src="bootstrap-js/bootstrap.js"></script>
+</body>
+
+</html>
