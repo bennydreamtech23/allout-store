@@ -622,17 +622,14 @@ form a{
   width: 120px;
 }
 
-.inner-box .btn:after{
-  content: '\27a4';
-  color: #30c0c0;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  position: absolute;
-  background-color: white;
-  right: 2px;
-  top: 7px;
-}
+
+
+
+
+
+  
+  
+
 
 .inner-box .btn:hover{
   border: 2px solid #30c0c0;
